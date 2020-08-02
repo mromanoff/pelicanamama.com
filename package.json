@@ -1,0 +1,19 @@
+{
+  "name": "pelicanamama.com",
+  "version": "1.0.0",
+  "description": "Pelicana Mana website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mromanoff/pelicanamama.com.git"
+  },
+  "author": "Michael Romanoff 2michael.romanoff@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mromanoff/pelicanamama.com/issues"
+  },
+  "homepage": "https://github.com/mromanoff/pelicanamama.com#readme"
+}
