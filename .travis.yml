@@ -9,7 +9,7 @@ cache:
 #  - yarn test
 before_deploy:
   - yarn global add travis-ci-cloudfront-invalidation
-  - yarn run generate
+#  - yarn run generate
 deploy:
   provider: s3
   region: us-west-1
