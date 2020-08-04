@@ -1,13 +1,22 @@
 <template>
   <div class="container">
-      <h1 class="title">
+      <h1 class="Title">
         Pelicana Mama
       </h1>
+      <Logo />
+
+      <a class="Button" href="https://www.etsy.com/shop/PelicanaMaMa" title="shop at Pelicanamama">Shop</a>
+
   </div>
 </template>
 
 <script>
-export default {}
+import Logo from '~/components/Logo.vue'
+export default {
+  components: {
+    Logo
+  }
+}
 </script>
 
 <style>
@@ -15,30 +24,34 @@ export default {}
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.title {
+.Title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: #e56022;
   letter-spacing: 1px;
+  margin: 2rem 0;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.Button {
+  padding: 1rem 4rem;
+  color: #e56022;
+  background-color: #ffffe9;
+  border: 2px solid #e56022;
+  border-radius: 10rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
 }
-
-.links {
-  padding-top: 15px;
+a.Button:any-link {
+  text-decoration: none;
 }
 </style>
