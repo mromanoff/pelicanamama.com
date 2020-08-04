@@ -1,12 +1,10 @@
 <template>
-  <div class="container">
-      <h1 class="Title">
+  <div class="Page">
+      <h1 class="Page-title">
         Pelicana Mama
       </h1>
-      <Logo />
-
+      <Logo class="Page-logo" />
       <a class="Button" href="https://www.etsy.com/shop/PelicanaMaMa" title="shop at Pelicanamama">Shop</a>
-
   </div>
 </template>
 
@@ -20,7 +18,7 @@ export default {
 </script>
 
 <style>
-.container {
+.Page {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -30,15 +28,24 @@ export default {
   text-align: center;
 }
 
-.Title {
+.Page-title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 80px;
   color: #e56022;
   letter-spacing: 1px;
   margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .Page-title {
+    font-size: 52px;
+  }
+}
+
+.Page-logo {
 }
 
 .Button {
@@ -48,8 +55,9 @@ export default {
   border: 2px solid #e56022;
   border-radius: 10rem;
   font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 a.Button:any-link {
   text-decoration: none;
