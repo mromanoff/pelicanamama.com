@@ -1,6 +1,6 @@
 <template>
   <div class="Logo">
-    <img src="../static/pelican_PNG2.png" alt="Pelicana Mama"/>
+    <img src="../static/images/pelican.png" alt="Pelicana Mama"/>
   </div>
 </template>
 
