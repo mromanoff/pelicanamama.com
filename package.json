@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.14.0"
+    "nuxt": "^3.4.3"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",
